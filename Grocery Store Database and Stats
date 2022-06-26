@@ -1,0 +1,22 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY,item TEXT,price INTEGER, quantity INTEGER);
+INSERT INTO store VALUES (1,"Burger",2.00,5);
+INSERT INTO store VALUES (2, "Cheese Burger",2.5,10);
+INSERT INTO store VALUES (3, "Fries", 1.00, 5);
+INSERT INTO store VALUES (4,"Chili fries",2.00, 6); 
+INSERT INTO store VALUES (5,"Chocolate Chip Cookies",.5,10);
+INSERT INTO store VALUES (6, "Peanut Butter Cookies",.5,10);
+INSERT INTO store VALUES (7, "Hot dog", 1.00, 20); 
+INSERT INTO store VALUES (8, "cheese cake", 2.00, 30); 
+INSERT INTO store VALUES (9, "pretzel", 1.25, 20);
+INSERT INTO store VALUES (10, "ice cream bar", 1.00, 40);
+INSERT INTO store VALUES (11, "ice cream cone", 1.25, 10); 
+INSERT INTO store VALUES (12,"ice cream scoop", 1.00,10);
+INSERT INTO store VALUES (13, "waffle cone",.50,10);
+INSERT INTO store VALUES (14, "nachos", 2.50, 10);
+INSERT INTO store VALUES (15, "Popcorn", 1.00, 20);
+
+--display the database ordered by price.
+SELECT * FROM store ORDER BY price;
+
+--what is the total quantity of items from store
+SELECT SUM(Quantity) FROM store ORDER BY price;
